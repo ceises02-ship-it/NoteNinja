@@ -4,7 +4,8 @@ const goButton = document.getElementById("go-btn");
 const results = document.getElementById("results");
 const readButton = document.getElementById("read-btn");
 
-let runId = 0; 
+let runId = 0;
+
 function renderResults(text) {
   results.textContent = "";
   text.split("\n").forEach(function (line) {
@@ -15,20 +16,17 @@ function renderResults(text) {
   });
 }
 
-
 function clearHighlight() {
   results.querySelectorAll(".line.reading").forEach(function (el) {
     el.classList.remove("reading");
   });
 }
 
-
 function stopReading() {
   runId++;
   window.speechSynthesis.cancel();
   clearHighlight();
 }
-
 
 goButton.addEventListener("click", async function () {
   stopReading();
@@ -70,7 +68,6 @@ goButton.addEventListener("click", async function () {
 
   goButton.disabled = false;
 });
-
 
 readButton.addEventListener("click", function () {
   stopReading();
