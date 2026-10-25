@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NoteNinja</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#notes">Skip to notes box</a>
+
+  <main>
+    <h1>NoteNinja <span aria-hidden="true">🥷</span></h1>
+    <p class="tagline">Paste your lecture notes. Get a simple summary and practice questions.</p>
+
+    <label for="notes" class="field-label">Your lecture notes</label>
+    <textarea id="notes" placeholder="Paste your lecture notes here..."></textarea>
+
+    <label class="toggle">
+      <input type="checkbox" id="simple-mode">
+      Explain it like I'm new to this
+    </label>
+
+    <button id="go-btn">Ninja-fy my notes</button>
+
+    <section id="results" aria-live="polite"></section>
+    <button id="read-btn" class="secondary-btn" hidden><span aria-hidden="true">🔊</span> Read aloud</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

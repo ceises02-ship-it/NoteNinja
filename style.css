@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #1e1b4b, #4c1d95);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+  color: #1f2937;
+}
+
+main {
+  background: #ffffff;
+  width: 100%;
+  max-width: 700px;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  height: fit-content;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 2.2rem;
+  color: #4c1d95;
+}
+
+.tagline {
+  margin: 0 0 20px;
+  color: #6b7280;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 14px;
+  border: 2px solid #ddd6fe;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #7c3aed;
+}
+
+.toggle {
+  display: block;
+  margin: 14px 0;
+  cursor: pointer;
+  color: #374151;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #7c3aed;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #6d28d9;
+}
+
+#results {
+  margin-top: 24px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+.error {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 2px solid #f87171;
+  border-left: 8px solid #dc2626;
+  padding: 14px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.field-label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.toggle input {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 16px;
+  background: #111827;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+button:focus-visible,
+textarea:focus-visible,
+input:focus-visible {
+  outline: 3px solid #f59e0b;
+  outline-offset: 3px;
+}
+.secondary-btn {
+  margin-top: 16px;
+  background: #ede9fe;
+  color: #4c1d95;
+}
+
+.secondary-btn:hover {
+  background: #ddd6fe;
+}
