@@ -131,3 +131,19 @@ input:focus-visible {
 .secondary-btn:hover {
   background: #ddd6fe;
 }
+#results {
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+
+.line {
+  padding: 2px 8px;
+  border-radius: 6px;
+  border-left: 6px solid transparent;
+}
+
+.line.reading {
+  background: #fde68a;
+  border-left-color: #f59e0b;
+  color: #111827;
+}
