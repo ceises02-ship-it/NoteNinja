@@ -41,7 +41,10 @@ ${notes.slice(0, 8000)}`;
             "Content-Type": "application/json",
             "x-goog-api-key": process.env.GEMINI_API_KEY,
           },
-          body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
+          body: JSON.stringify({
+  contents: [{ parts: [{ text: prompt }] }],
+  generationConfig: { thinkingConfig: { thinkingLevel: "low" } },
+}),
         }
       );
 
